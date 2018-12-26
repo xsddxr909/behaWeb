@@ -27,6 +27,8 @@
 
     //添加基础节点的地方;
     //这里添加节点  找死我了。。。。。。
+
+    //Composite
     this.nodes.add(b3e.Root, true);
     this.nodes.add(b3.Select, true);
     this.nodes.add(b3.Sequence, true);
@@ -35,20 +37,36 @@
     this.nodes.add(b3.IfElse, true);
     this.nodes.add(b3.Switchs, true);
     this.nodes.add(b3.Cases, true);
+    this.nodes.add(b3.WeightRandom, true);
+    this.nodes.add(b3.ORs, true);
+    this.nodes.add(b3.Ands, true);
 
-
+     //Decorator
     this.nodes.add(b3.Not, true);
-    this.nodes.add(b3.Repeater, true);
-    this.nodes.add(b3.RepeatUntilFailure, true);
-    this.nodes.add(b3.RepeatUntilSuccess, true);
-    this.nodes.add(b3.MaxTime, true);
-    this.nodes.add(b3.Inverter, true);
-    this.nodes.add(b3.Limiter, true);
-    this.nodes.add(b3.Failer, true);
+    this.nodes.add(b3.Loops, true);
+    this.nodes.add(b3.Times, true);
+    this.nodes.add(b3.SynTimes, true);
+    this.nodes.add(b3.InFrames, true);
     this.nodes.add(b3.Succeeder, true);
-    this.nodes.add(b3.Runner, true);
-    this.nodes.add(b3.Error, true);
-    this.nodes.add(b3.Wait, true);
+    this.nodes.add(b3.Failer, true);
+    this.nodes.add(b3.CountLimit, true);
+    //Condition
+
+    //action
+    this.nodes.add(b3.NullAct, true);
+    this.nodes.add(b3.WaitFrame, true);
+    this.nodes.add(b3.WaitTimes, true);
+
+
+
+    // this.nodes.add(b3.RepeatUntilFailure, true);
+    // this.nodes.add(b3.RepeatUntilSuccess, true);
+    // this.nodes.add(b3.MaxTime, true);
+    // this.nodes.add(b3.Inverter, true);
+    // this.nodes.add(b3.Limiter, true);
+    // this.nodes.add(b3.Runner, true);
+    // this.nodes.add(b3.Error, true);
+    // this.nodes.add(b3.Wait, true);
 
 
     this._applySettings(this._editor._settings);
