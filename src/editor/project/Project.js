@@ -50,6 +50,7 @@
     this.nodes.add(b3.Succeeder, true);
     this.nodes.add(b3.Failer, true);
     this.nodes.add(b3.CountLimit, true);
+    this.nodes.add(b3.SuccessReset, true);
     //Condition
 
     //action
